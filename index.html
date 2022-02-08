@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Karolline - Web designer</title>
+
+    <!-- JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js" integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="css/keyframes.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/toast.css" />
+    <link rel="stylesheet" href="css/main-mobile.css" media="all and (max-width: 767px)" />
+
+    <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/toast.js"></script>
+  </head>
+  <body>
+    <div class="website">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <div class="thumb"><img src="images/logo-site.png" alt="Karolline - Logo" /></div>
+          </div>
+          <nav>
+            <ul>
+              <li class="active"><a onclick="oSite.ScrollTo(this,'#about')">About</a></li>
+              <li><a onclick="oSite.ScrollTo(this,'#projects')">Projects</a></li>
+              <li><a onclick="oSite.ScrollTo(this,'#skills')">Skills</a></li>
+              <li><a onclick="oSite.ScrollTo(this,'#contact')">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section id="about">
+          <div class="container">
+            <h1 class="gradient-purple">Bonjour,<br />I'm Karolline, <br />Web designer.</h1>
+
+            <div class="div-thumb">
+              <img class="grayscale-hover" src="images/karolline.png" alt="Karolline" class="about-img" />
+              <ul class="social-media">
+                <li>
+                  <a target="_blank" href="https://www.linkedin.com/in/karolline-oliveira/" title="LinkedIn"><img width="50" src="images/social-media-linkedin.gif" akt="LinkedIn" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://www.instagram.com/karollinecreative/" title="Instagram"><img width="50" src="images/social-media-instagram.gif" akt="Instagram" /></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://github.com/Karolline-oliveira" title="Github"><img width="50" src="images/social-media-github.gif" akt="Github" /></a>
+                </li>
+              </ul>
+            </div>
+            <p>In 2017, I graduated in Marketing at the Catholic University of Petrópolis in Brazil and worked in a public office of the Brazilian government as an administrative assistant until I came to study Web design and development at CDI College in Montreal, Canada. In that course, I nurtured my desire to learn more about technology and design, a subject that I have been interested in since I was a child.</p>
+            <p>When I arrived in Montreal, I dedicated myself to studies, and I worked on my own as social media content manager and I developed some websites through WordPress and Shopify for some small businesses. In this way, I have already experienced working in a group and alone, and I was able to do both easily.</p>
+            <p>When I am not studying or working, I enjoy playing video games, watching movies and TV series, and I am also completely passionate about nature, traveling and adventures.</p>
+          </div>
+        </section>
+        <section id="projects">
+          <div class="container">
+            <h2 class="gradient-purple">Projects</h2>
+            <p>Here are some of my recent work and personal projects.</p>
+
+            <ul>
+              <li onclick="oSite.ShowAnimations()">
+                <img src="images/animations.svg" alt="Animations" />
+                <p>Animations</p>
+              </li>
+              <li onclick="oSite.ShowEditions()">
+                <img src="images/editions.png" alt="Editions" />
+                <p>Editions</p>
+              </li>
+              <li onclick="oSite.ShowLogos()">
+                <img src="images/logos.svg" alt="Logos" />
+                <p>Logos</p>
+              </li>
+              <li onclick="oSite.ShowSocialMedia()">
+                <img src="images/social-media.svg" alt="Social Media" />
+                <p>Social Media</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="skills">
+          <div class="container">
+            <h2 class="gradient-purple">Skills & Tools</h2>
+
+            <ul class="container-icons">
+              <li>
+                <div><img src="images/adobe-creative.svg" alt="Adobe Creative" /></div>
+                <p>Adobe Creative</p>
+              </li>
+              <li>
+                <div><img src="images/bootstrap.svg" alt="Bootstrap" /></div>
+                <p>Bootstrap</p>
+              </li>
+              <li>
+                <div><img src="images/html5.svg" alt="HTML 5" /></div>
+                <p>HTML5</p>
+              </li>
+              <li>
+                <div><img src="images/css3.svg" alt="CSS 3" /></div>
+                <p>CSS3</p>
+              </li>
+              <li>
+                <div><img src="images/js.svg" alt="JS" /></div>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <div><img src="images/jquery.svg" alt="jQuery" /></div>
+                <p>jQuery</p>
+              </li>
+              <li>
+                <div><img src="images/vs-code.svg" alt="VS Code" /></div>
+                <p>VS Code</p>
+              </li>
+              <li>
+                <div><img src="images/responsive.svg" alt="Responsive" /></div>
+                <p>Responsive</p>
+              </li>
+              <li>
+                <div><img src="images/wordpress.svg" alt="Wordpress" /></div>
+                <p>WordPress</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="container">
+            <h2 class="gradient-purple">Contact</h2>
+
+            <p>Let's do something magical!</p>
+
+            <form action="#" onsubmit="oSite.SubmitContact(this);return false">
+              <div class="field-row">
+                <label for="txtName"><strong>Name</strong></label>
+                <input type="text" id="txtName" placeholder="Your name" required minlength="3" />
+              </div>
+              <div class="field-row">
+                <label for="txtEmail"><strong>E-mail</strong></label>
+                <input type="email" id="txtEmail" placeholder="ex: youremail@provider.com" required />
+              </div>
+              <div class="field-row">
+                <label for="ttaMessage"><strong>Message</strong></label>
+                <textarea id="ttaMessage" required minlength="10" placeholder="Enter your message here"></textarea>
+              </div>
+              <div class="text-right">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">Karolline - Web designer © 2022</div>
+      </footer>
+    </div>
+
+    <div class="my-modal d-none" id="myModal">
+      <div class="my-modal-dialog">
+        <div class="my-modal-header">
+          <div class="my-modal-title">
+            <h3></h3>
+          </div>
+          <button class="my-modal-close" onclick="oModal.CloseModal()">X</button>
+        </div>
+        <div class="my-modal-body"></div>
+      </div>
+      <div class="my-modal-overlay" onclick="oModal.CloseModal()"></div>
+    </div>
+
+    <div class="my-toast d-none" id="myToast"></div>
+  </body>
+</html>

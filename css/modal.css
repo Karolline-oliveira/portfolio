@@ -1,0 +1,81 @@
+.my-modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.my-modal .my-modal-dialog {
+  position: relative;
+  min-width: 25vw;
+  max-height: 80vh;
+  max-width: 90vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+  background-color: #d2bed2;
+}
+
+.my-modal .my-modal-dialog .my-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #cccccc;
+  padding: 1em;
+  background-color: #f681a7;
+}
+
+.my-modal .my-modal-dialog .my-modal-header .my-modal-title {
+  flex: 1;
+}
+
+.my-modal .my-modal-dialog .my-modal-header .my-modal-title h3 {
+  height: auto;
+  margin: 0;
+  color: #ffffff;
+}
+
+.my-modal .my-modal-dialog .my-modal-header .my-modal-close {
+  width: 2em;
+  height: 2em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #ff6d6d;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.my-modal .my-modal-dialog .my-modal-header .my-modal-close:hover {
+  background-color: #ffb1b1;
+}
+
+.my-modal .my-modal-dialog .my-modal-body {
+  display: flex;
+  border: solid 1px #cccccc;
+  flex: 1;
+  padding: 2em;
+  overflow: auto;
+  max-height: 100%;
+}
+
+.my-modal .my-modal-overlay {
+  background-color: rgba(5, 5, 5, 0.85);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}

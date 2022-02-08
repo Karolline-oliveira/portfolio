@@ -1,0 +1,50 @@
+header .logo span {
+  display: none;
+}
+
+header nav ul li a {
+  font-size: 0.75em;
+}
+
+main section#about .div-thumb {
+  float: none;
+}
+
+main section#projects ul {
+  grid-template-columns: 1fr;
+}
+
+main section#projects ul li {
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  background-color: #0a0a0a;
+  border-radius: 10px;
+}
+
+main section#projects ul li:hover {
+  background-color: #0f0f0f;
+}
+
+main section#projects ul li:nth-child(even) {
+  flex-direction: row;
+}
+
+main section#skills ul {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main section#skills ul li p {
+  font-size: 0.8em;
+}
+
+.field-row {
+  flex-direction: column;
+}
+
+.gallery-projects ul {
+  grid-template-columns: 1fr;
+}
+
+footer {
+  font-size: 0.75em;
+}

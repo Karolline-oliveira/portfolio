@@ -1,0 +1,53 @@
+.my-toast {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 0.5em 1em;
+  right: 1em;
+  bottom: 1em;
+  border-radius: 5px;
+}
+
+.my-toast.d-none {
+  bottom: -10em;
+}
+
+.my-toast-success {
+  background-color: #28a745 !important;
+}
+
+.my-toast-error {
+  background-color: #dc3545 !important;
+}
+
+.my-toast-show {
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.my-toast-hide {
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slideUp {
+  0% {
+    bottom: -10em;
+  }
+  100% {
+    bottom: 1em;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    bottom: 1em;
+  }
+  100% {
+    bottom: -10em;
+  }
+}
